@@ -22,61 +22,61 @@ Codewar 是一個程式解題平台，上面充滿著各種開發者出的題目
 
 ## 零顆星（超簡單）
 
-### ❌ Opposite number
+### :white_check_mark: Opposite number
 題目連結：https://www.codewars.com/kata/opposite-number/javascript  
 題目說明：正數變負數，反之亦然
 
-### ❌ Even or Odd
+### :white_check_mark: Even or Odd
 題目連結：https://www.codewars.com/kata/even-or-odd/javascript  
 題目說明：判斷是奇數或是偶數
 
 ## 一顆星（熟悉語法）
 
-### ❌ Number-Star ladder
+### :white_check_mark: Number-Star ladder
 題目連結：https://www.codewars.com/kata/number-star-ladder/javascript  
 題目說明：
 這題就是依照規律輸出文字，沒什麼好講的
 
-### ❌ Who likes it
+### :white_check_mark: Who likes it
 題目連結：https://www.codewars.com/kata/who-likes-it  
 題目說明：模擬 Facebook 按讚時或出現的文字
 
-### ❌ String repeat
+### :white_check_mark: String repeat
 題目連結：https://www.codewars.com/kata/string-repeat/javascript  
 題目說明：回傳重複 n 遍的字串
 
-### ❌ Build Tower
+### :white_check_mark: Build Tower
 題目連結：https://www.codewars.com/kata/build-tower  
 題目說明：
 也是依照規律輸出文字即可
 
-### ❌ Reversed Strings
+### :white_check_mark: Reversed Strings
 題目連結：https://www.codewars.com/kata/reversed-strings/javascript  
 題目說明：
 把輸入的文字反轉過後回傳，如果想挑戰自己的話，可以試試看用陣列的各種內建函式組合完成
 
-### ❌ Reversed Words
+### :white_check_mark: Reversed Words
 題目連結：https://www.codewars.com/kata/reversed-words  
 題目說明：
 這一題是進階版的字串反轉，原本的只要把每個「字元」反轉，這個則是要把每個「單字」反轉。
 
-### ❌ Alternate case
+### :white_check_mark: Alternate case
 題目連結：https://www.codewars.com/kata/alternate-case  
 題目說明：把大寫字母轉成小寫，小寫字母轉成大寫
 
-### ❌ You only need one - Beginner
+### :white_check_mark: You only need one - Beginner
 題目連結：https://www.codewars.com/kata/you-only-need-one-beginner/javascript  
 題目說明：回傳要找的元素是否在陣列裡面
 
-### ❌ Find the capitals
+### :white_check_mark: Find the capitals
 題目連結：https://www.codewars.com/kata/find-the-capitals-1/javascript  
 題目說明：回傳大寫字母所在的 index
 
-### ❌ Sum arrays
+### :white_check_mark: Sum arrays
 題目連結：https://www.codewars.com/kata/sum-arrays/javascript  
 題目說明：把陣列加總回傳結果
 
-### ❌ Find the smallest integer in the array
+### :white_check_mark: Find the smallest integer in the array
 題目連結：https://www.codewars.com/kata/find-the-smallest-integer-in-the-array   
 題目說明：找出陣列中最小的數字
 
