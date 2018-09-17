@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="learn, html, css, homework">
+		<meta name="description" content="mentor-program-2nd-twgd-week3-hw1">
+		<meta name="og:title" content="hw1">
+		<meta name="og:description" content="mentor-program-2nd-twgd-week3-hw1">
+		<title>twgd hw3-1</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			.navbar {
+				position: fixed;
+				width: 100%;
+				height: 50px;
+				top: 0;
+				left: 0;
+				padding: 0 10px;
+				background: #3c3c3c;
+			}
+			.navbar__title {
+				display: inline-block;
+				color: white;
+				font-size: 20px;
+				vertical-align: middle;
+			}
+			.navbar ul {
+				display: inline-block;
+				margin: 12px 0;
+				padding: 0;
+				vertical-align: middle
+			}
+			.navbar ul li {
+				display: inline-block;
+				color: gray;
+				padding-left: 15px;
+				vertical-align: middle
+			}
+			.navbar ul li:hover {
+				cursor: pointer;
+				color: white;
+
+			}
+			.header {
+				background: #f0f0f0;
+				margin-top: 50px;
+				padding: 40px 0;
+			}
+			.header__container {
+				max-width: 960px;
+				margin: 0 auto;
+				padding: 0 20px;
+			}
+			.header__title {
+				font-size: 70px;
+			}
+			.header__button {
+				display: inline-block;
+			    background: #1f7ef5;
+			    border: none;
+			    border-radius: 5px;
+			    color: white;
+			    padding: 15px 20px;
+			    font-size: 20px;
+			    transition: background 0.3s;
+			}
+			.header__button:hover {
+			    background: #1463c5;
+			    cursor: pointer;
+			}
+			.content {
+				max-width: 960px;
+				margin: 0 auto;
+				padding: 0 20px;
+			}
+			.content__container {
+				margin: 50px 0;
+			}
+			.content__block {
+				display: inline-block;
+				width: 31%;
+			}
+			.block__title {
+				font-size: 32px;
+			}
+			.block__button {
+				display: inline-block;
+			    background-color: #717171;
+			    border: none;
+			    border-radius: 5px;
+			    color: white;
+			    padding: 15px 10px;
+			    font-size: 16px;
+			    transition: background 0.3s;
+			}
+			.block__button:hover {
+			    background-color: #5f5e5e;
+			    cursor: pointer;
+			}
+			.footer {
+				padding-top: 10px;
+				border-top: 0.5px solid #dadada;
+			}
+			
+			@media screen and (max-width: 768px) {
+				.content__block {
+					width: 100%;
+				}
+				.content__block ~ .content__block{
+					margin-top: 20px;
+				}
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div class="site">
+			<div class="navbar">
+				<div class="navbar__title">Navbar</div>
+				<ul>
+					<li>Home</li>
+					<li>Link</li>
+				</ul>
+		    </div>
+			<div class="header">
+				<div class="header__container">
+					<div class="header__title">Hello, world!</div>
+					<p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+					<div class="header__button">Learn more>></div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="content__container">
+					<div class="content__block">
+						<div class="block__title">Heading</div>
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+						<div class="block__button">View details>></div>
+					</div>
+					<div class="content__block">
+						<div class="block__title">Heading</div>
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+						<div class="block__button">View details>></div>
+					</div>
+					<div class="content__block">
+						<div class="block__title">Heading</div>
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+						<div class="block__button">View details>></div>
+					</div>
+				</div>
+				<div class="footer">
+					<p>© Company 2017-2018</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
