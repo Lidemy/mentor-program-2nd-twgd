@@ -18,28 +18,35 @@
 				height: 50px;
 				top: 0;
 				left: 0;
-				padding: 0 10px;
 				background: #3c3c3c;
 			}
+			.navbar:before {
+				content: '';
+				width: 10px;
+				height:100%;
+				display:inline-block;
+				vertical-align: middle;
+			}
+
 			.navbar__title {
 				display: inline-block;
 				color: white;
 				font-size: 20px;
 				vertical-align: middle;
 			}
-			.navbar ul {
+			.navbar__list {
 				display: inline-block;
-				margin: 12px 0;
+				vertical-align: middle;
+				margin: 0;
 				padding: 0;
-				vertical-align: middle
 			}
-			.navbar ul li {
+			.navbar__list li {
 				display: inline-block;
 				color: gray;
 				padding-left: 15px;
-				vertical-align: middle
+				vertical-align: middle;
 			}
-			.navbar ul li:hover {
+			.navbar__list li:hover {
 				cursor: pointer;
 				color: white;
 
@@ -76,12 +83,12 @@
 				margin: 0 auto;
 				padding: 0 20px;
 			}
-			.content__container {
+			.blocks__container {
 				margin: 50px 0;
 			}
-			.content__block {
+			.block {
 				display: inline-block;
-				width: 31%;
+				width: 32%;
 			}
 			.block__title {
 				font-size: 32px;
@@ -106,10 +113,10 @@
 			}
 			
 			@media screen and (max-width: 768px) {
-				.content__block {
+				.block {
 					width: 100%;
 				}
-				.content__block ~ .content__block{
+				.block ~ .block{
 					margin-top: 20px;
 				}
 			}
@@ -121,7 +128,7 @@
 		<div class="site">
 			<div class="navbar">
 				<div class="navbar__title">Navbar</div>
-				<ul>
+				<ul class="navbar__list">
 					<li>Home</li>
 					<li>Link</li>
 				</ul>
@@ -134,18 +141,18 @@
 				</div>
 			</div>
 			<div class="content">
-				<div class="content__container">
-					<div class="content__block">
+				<div class="blocks__container">
+					<div class="block">
 						<div class="block__title">Heading</div>
 						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
 						<div class="block__button">View details>></div>
 					</div>
-					<div class="content__block">
+					<div class="block">
 						<div class="block__title">Heading</div>
 						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
 						<div class="block__button">View details>></div>
 					</div>
-					<div class="content__block">
+					<div class="block">
 						<div class="block__title">Heading</div>
 						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
 						<div class="block__button">View details>></div>
