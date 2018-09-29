@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>twgd hw4-4</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<style type="text/css">
+			body {
+				margin: 0;
+				background: black;
+			}
+			.moon {
+				width: 300px;
+				height: 300px;
+				border: none;
+				border-radius: 50%;
+				background: yellow;
+				margin: 50px auto;
+			}
+			.button {
+				display: flex;
+				justify-content: center;
+			}
+			.hide {
+				width: 100px;
+				background: gray;
+				border-radius: 5px;
+				color: white;
+				text-align: center;
+				margin: 0 10px;
+				padding: 10px 20px;
+			}
+			.hide:hover {
+				cursor: pointer;
+			}
+			.show {
+				width: 100px;
+				background: gray;
+				border-radius: 5px;
+				color: white;
+				text-align: center;
+				margin: 0 10px;
+				padding: 10px 20px;
+			}
+			.show:hover {
+				cursor: pointer;
+			}
+			.footer {
+				display: flex;
+				justify-content: center;
+				margin: 30px;
+				font-size: 10px;
+				color: white;
+			}
+			.footer a {
+				color: white;
+			}
+
+
+		</style>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', () => {
+				
+				//實作出一個簡單的 function 叫做q，可以快速的選取到你要的元素
+				const q = n => {
+					let select = document.querySelector(n);
+					select.hide = () => element.style.visibility = "hidden";
+					select.show = () => element.style.visibility = "visible";
+					return select;
+				}
+				
+				//接著利用選到之後的這個物件進行常見的操作（hide跟show）
+				let element = q('.moon');
+				
+				//element.hide() // 隱藏
+				q('.hide').addEventListener("click", () => element.hide());
+
+				//element.show() // 顯示
+				q('.show').addEventListener("click", () => element.show());
+			})
+		</script>
+	</head>
+	<body>
+		<div class="moon"></div>
+		<div class="button">
+			<div class="hide">月亮變不見</div>
+			<div class="show">月亮出來了</div>
+		</div>
+		<footer class="footer">
+			<span>這是 <a href="https://github.com/twgd">TWGD</a> 的 <a href="https://github.com/Lidemy/mentor-program-2nd-twgd">mentor-program-2nd</a> 作業</span>
+		</footer>
+	</body>
+</html>
