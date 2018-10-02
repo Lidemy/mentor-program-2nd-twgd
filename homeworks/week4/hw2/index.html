@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>twgd hw4-2</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<script type="text/javascript" src="./script.js"></script>
+	</head>
+	<body>
+		<div class="background__image"></div>
+		<div class="content">
+			<form name="form">
+				<div class="form__container">
+					<div class="title__container">
+						<div class="form__title">程式導師實驗計畫第二期報名表單</div>
+						<div class="form__description">
+							<p>報名已經結束，歡迎光臨 TWGD 的作業XD</p>
+							<p>詳情請參考：<a href="https://medium.com/hulis-blog/mentor-program-s2-f876c4e13d3b" target="_blank">https://medium.com/hulis-blog/mentor-program-s2-f876c4e13d3b</a></p>
+							<p>填完之後請務必按照文章內的說明再寄信給我，才算報名成功喔</p>
+							<!-- "*" 在 CSS 設定，用 ::before 顯示 -->
+							<span class="required" data-required="*">必填</span>
+						</div>
+					</div>
+					<div class="question__block" id="email">
+						<!-- "*" 在 CSS 設定，用 ::after 顯示 -->
+						<div class="question__title" data-symbol="*">電子郵件地址</div>
+						<div class="question__description"></div>
+						<div class="question__answer">
+							<input type="email" name="email" class="text__short" placeholder="你的電子郵件">
+						</div>
+						<div class="question__prompt"></div>
+					</div>
+					<div class="question__block" id="name">
+						<div class="question__title" data-symbol="*">暱稱</div>
+						<div class="question__description">該如何稱呼你</div>
+						<div class="question__answer">
+							<input type="text" name="name" class="text__short" placeholder="您的回答">
+						</div>
+						<div class="question__prompt"></div>
+					</div>
+					<div class="question__block" id="course">
+						<div class="question__title" data-symbol="*">報名類型</div>
+						<div class="question__description"></div>
+						<div class="question__answer">
+							<!-- 加上 label 標籤，點選文字就能選擇 -->
+							<input type="radio" name="course" id="basic">
+							<label for="basic">從零到一基礎班（一個月後開始收保證金 3000，淘汰不退還，結業後兩個月內找到工作付一個月半薪水，沒工作不用付）</label><br>
+							<input type="radio" name="course" id="plus">
+							<label for="plus">在職工程師加強班（一個月後開始收保證金 3000，兩個月時收學費 30000，被淘汰不退還）"</label>
+						</div>
+						<div class="question__prompt"></div>
+					</div>
+					<div class="question__block" id="career">
+						<div class="question__title" data-symbol="*">現在的職業</div>
+						<div class="question__description">範例：學生、前端工程師、待業中、業務</div>
+						<div class="question__answer">
+							<input type="text" name="career" class="text__short" placeholder="您的回答">
+						</div>
+						<div class="question__prompt"></div>
+					</div>
+					<div class="question__block" id="experience">
+						<div class="question__title" data-symbol="*">是否有程式相關背景</div>
+						<div class="question__description">範例：無、高中時候學過C++、學過一點網頁前端、目前在資策會上課...</div>
+						<div class="question__answer">
+							<input type="text" name="experience" class="text__long" placeholder="您的回答">
+						</div>
+						<div class="question__prompt"></div>
+					</div>
+					<div class="question__block" id="other">
+						<div class="question__title" data-symbol="">其他</div>
+						<div class="question__description">任何你想說的</div>
+						<div class="question__answer">
+							<input type="text" name="other" class="text__long" placeholder="您的回答">
+						</div>
+						<div class="question__prompt"></div>
+					</div>
+					<div class="button">
+						<input type="submit" value="提交">
+					</div>
+					<div class="notice">
+						<span>請勿利用 6ooq1e 表單送出密碼。</span>
+					</div>
+				</div>
+			</form>
+			<footer class="footer">
+				<span class="declaration">6ooq1e 並未認可或建立這項內容。這是 <a href="https://github.com/twgd">TWGD</a> 的 <a href="https://github.com/Lidemy/mentor-program-2nd-twgd">mentor-program-2nd</a> 作業</span>
+				<div class="logo">6ooq1e 表單</div>
+			</footer>
+		</div>
+	</body>
+</html>
+
+
