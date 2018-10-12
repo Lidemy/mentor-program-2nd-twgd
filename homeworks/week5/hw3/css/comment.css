@@ -1,0 +1,97 @@
+body {
+	margin:0;
+	background: #413C58;
+}
+.web__container {
+	width:60%;
+	margin:80px auto;
+
+}
+.title {
+	padding: 10px;
+	font-size: 36px;
+	color: white;
+	text-align: center;
+}
+.board__container {
+	background: #A3C4BC;
+	padding: 20px;
+	border:none;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+.btn__comment {
+	padding: 10px 20px;
+	margin-top:10px;
+	background: #413C58;
+	color:white;
+	border :none;
+	border-radius: 5px;
+	text-decoration:none;
+	outline: none;
+}
+.btn__comment:hover {
+	cursor: pointer;
+}
+
+.comment__container {
+	padding: 20px;
+	background: #ddf2eb;
+}
+
+.status {
+	border-bottom: 0.5px solid darkgray;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-bottom: 10px;
+}
+
+.nickname {
+	color: #413C58;
+	font-size: 20px;
+	margin-right: 20px;
+	font-weight: bold; 
+}
+.time {
+	font-size: 10px;
+}
+.content {
+	margin-top: 10px;
+	line-height: 1.5em;
+}
+
+.textarea__content {
+	display: block;
+	border :none;
+	margin-bottom: 10px;
+	padding: 5px;
+	width: 100%;
+	outline:none;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+.reply {
+	background: #ddf2eb8f;
+	margin-top: 10px;
+	padding: 20px 20px 20px 40px;
+	border: none;
+}
+.btn__reply {
+	padding: 5px 10px;
+	margin-top: 10px;
+	background: #A3C4BC;
+	color: #413C58;
+	border :none;
+	border-radius: 5px;
+	text-decoration:none;
+	outline: none;
+}
+.btn__reply:hover {
+	cursor: pointer;
+}
+
+.redirection {
+	text-align: center;
+}
+
