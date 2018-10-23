@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>TWGD hw7-1 基本網格系統</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" >
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			.container {
+				width: 100%;
+				margin: 0 auto;
+
+			}
+
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+				padding: 10px;
+				box-sizing: border-box;
+				border: 1px solid rgba(86,61,124,.2);
+				background: rgba(86,61,124,.15);
+			}
+
+			.col-1 {
+				width: 8.3333333333%;
+			}
+
+			.col-2 {
+				width: 16.66666667%;
+			}
+
+			.col-3 {
+				width: 25%;
+			}
+
+			.col-4 {
+				width: 33.3333333333%;
+			}
+
+			.col-5 {
+				width: 41.6666666667%;
+			}
+
+			.col-6 {
+				width: 50%;
+			}
+
+			.col-7 {
+				width: 58.3333333333%;
+			}
+
+			.col-8 {
+				width: 66.6666666667%;
+			}
+
+			.col-9 {
+				width: 75%;
+			}
+
+			.col-10 {
+				width: 83.3333333333%;
+			}
+
+			.col-11 {
+				width: 91.6666666667%;
+			}
+
+			.col-12 {
+				width: 100%;
+
+			}
+			@media (min-width: 720px) {
+				.container {
+					max-width: 960px;
+				}
+			}
+
+			@media (max-width: 720px) {
+				.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+					width: 100%;
+				}
+
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<!-- demo 一個 row -->
+			<div class="row">
+				<div class="col-1">
+					col-1
+				</div>
+				<div class="col-8">
+					col-8
+				</div>
+				<div class="col-3">
+					col-3
+				</div>
+			</div>
+			<!--每一個 col -->
+			<div class="row">
+				<div class="col-1">
+					col-1
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					col-2
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-3">
+					col-3
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					col-4
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-5">
+					col-5
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					col-6
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-7">
+					col-7
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-8">
+					col-8
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-9">
+					col-9
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-10">
+					col-10
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-11">
+					col-11
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					col-12
+				</div>
+			</div>
+		  
+		</div>
+	</body>
+</html>
