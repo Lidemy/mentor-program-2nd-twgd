@@ -54,7 +54,7 @@
 		$arr = $stmt_last->get_result()->fetch_assoc();
 		echo json_encode($arr);
 		
-		//clode
+		//close
 		$stmt->close();
 		$stmt_last->close();
 		$conn->close();
