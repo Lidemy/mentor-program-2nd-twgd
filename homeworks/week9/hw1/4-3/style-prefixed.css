@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  background: url(http://i.imgur.com/gXzK0eL.jpg) center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  text-align: center;
+  padding: 30px;
+  color: #00BCD4;
+  background: #00000080;
+  margin-bottom: 20px;
+}
+.header h1 {
+  font-size: 40px;
+  margin: 0;
+}
+.header h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.strs-container {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.strs-container .stream {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.9;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+.strs-container .stream:hover {
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+.strs-container .stream a {
+  text-decoration: none;
+}
+.strs-container .stream a .preview {
+  height: 180px;
+}
+.strs-container .stream a .description {
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  background: #000000cc;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.strs-container .stream a .description .logo {
+  display: flex;
+  align-items: center;
+}
+.strs-container .stream a .description .logo img {
+  width: 70px;
+  border: none;
+  border-radius: 50%;
+}
+.strs-container .stream a .description .title {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.strs-container .stream a .description .title .status {
+  margin-bottom: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+}
+.strs-container .stream a .description .title .name {
+  font-size: 12px;
+}
+
+.footer {
+  text-align: center;
+  margin: 30px 0;
+  color: #ffffff;
+  font-size: 10px;
+}
+.footer a {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiLCJzdHlsZS1uZXcuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWlCQTtFQUNDLFVBQUE7RUFDQSw4REFBQTtFQUNBLHVCQUFBO0VBQ0EsNkJBQUE7Q0NoQkE7O0FEbUJEO0VBQ0MsbUJBQUE7RUFDQSxjQUFBO0VBQ0EsZUF6QmM7RUEwQmQsc0JBekJpQjtFQTBCZCxvQkFBQTtDQ2hCSDtBRGtCRztFQUNJLGdCQTVCZ0I7RUE2QmhCLFVBQUE7Q0NoQlA7QURtQkc7RUFDSSxnQkFoQ2tCO0VBaUNsQixVQUFBO0NDakJQOztBRHNCRDtFQUNDLGNBQUE7RUFDQSxlQUFBO0VBQ0EsV0FBQTtFQUNBLGdCQUFBO0VBQ0csd0JBQUE7Q0NuQkg7QURxQkc7RUFDSSxhQUFBO0VBQ0EsY0FBQTtFQUNBLHVCQUFBO0VBQ0EsYUFBQTtFQUNBLGlEQUFBO0VBQUEseUNBQUE7RUFBQSxpRUFBQTtDQ25CUDtBRHFCTztFQUNJLGdCQUFBO0VBQ0EsV0FBQTtFQUNBLHFDQUFBO1VBQUEsNkJBQUE7Q0NuQlg7QURzQk87RUFDSSxzQkFBQTtDQ3BCWDtBRHNCVztFQUNJLGNBQUE7Q0NwQmY7QUR1Qlc7RUFDSSxhQUFBO0VBQ0EsY0FBQTtFQUNBLG9CQUFBO0VBQ0Esc0JBbEVHO0VBbUVILHVCQUFBO0VBQ0EsY0FBQTtDQ3JCZjtBRHVCZTtFQUNJLGNBQUE7RUFDQSxvQkFBQTtDQ3JCbkI7QUR1Qm1CO0VBQ0ksWUFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtDQ3JCdkI7QUR5QmU7RUFDSSxjQUFBO0VBQ0EsdUJBQUE7RUFDQSxlQW5GRTtFQW9GRixrQkFBQTtDQ3ZCbkI7QUR5Qm1CO0VBQ0ksb0JBQUE7RUFDQSxnQkF2RkQ7RUF3RkMsaUJBQUE7RUFDQSx3QkFBQTtFQUNBLHFCQUFBO0VBRUEsc0JBQUE7Q0N2QnZCO0FEMEJtQjtFQUNJLGdCQS9GRTtDQ3VFekI7O0FEZ0NEO0VBQ0MsbUJBQUE7RUFDQSxlQUFBO0VBQ0EsZUF4R2E7RUF5R1YsZ0JBeEdXO0NDMkVkO0FEK0JHO0VBQ0ksZUE1R007Q0MrRWIiLCJmaWxlIjoic3R5bGUtcHJlZml4ZWQuY3NzIn0= */

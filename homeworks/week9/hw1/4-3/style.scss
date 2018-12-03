@@ -1,0 +1,128 @@
+$body-bg-img: url(http://i.imgur.com/gXzK0eL.jpg);
+
+$header-color: #00BCD4;
+$header-bg-color: #00000080;
+$header-primary-f-size: 40px;
+$header-secondary-f-size: 16px;
+
+
+$str-des-bg-color: #000000cc;
+$str-des-title-color: #ffffff;
+$title-primary-f-size: 14px;
+$title-secondary-f-size : 12px;
+
+$small-color: #ffffff;
+$small-f-size: 10px;
+
+
+body {
+	margin: 0;
+	background: $body-bg-img center center;
+	background-size: cover; 
+	background-attachment: fixed;
+}
+
+.header {
+	text-align: center;
+	padding: 30px;
+	color: $header-color;
+	background: $header-bg-color;
+    margin-bottom: 20px;
+    
+    h1 {
+        font-size: $header-primary-f-size;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: $header-secondary-f-size;
+        margin: 0;
+    }
+}
+
+
+.strs-container {
+	display: flex;
+	margin: 0 auto;
+	width: 80%;
+	flex-wrap: wrap;
+    justify-content: center;
+    
+    .stream {	
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        opacity: 0.9;
+        transition: opacity 0.5s, transform 0.5s;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+            transform: scale(1.05, 1.05);
+        }
+
+        a {
+            text-decoration: none;
+
+            .preview {
+                height: 180px;
+            }
+
+            .description {
+                width: 320px;
+                display: flex;
+                flex-direction: row;
+                background: $str-des-bg-color;
+                box-sizing: border-box;
+                padding: 10px;
+    
+                .logo {
+                    display: flex;
+                    align-items: center;
+    
+                    img {
+                        width: 70px;
+                        border: none;
+                        border-radius: 50%;
+                    }
+                }
+    
+                .title {
+                    display: flex;
+                    flex-direction: column;
+                    color: $str-des-title-color;
+                    margin-left: 10px;
+
+                    .status {
+                        margin-bottom: 10px;
+                        font-size: $title-primary-f-size;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-box-orient:vertical;
+                        -webkit-line-clamp: 2;
+                    }
+
+                    .name {
+                        font-size: $title-secondary-f-size;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+	text-align: center;
+	margin: 30px 0;
+	color: $small-color;
+    font-size: $small-f-size;
+    
+    a {
+        color: $small-color;
+    }
+}
+
+
+
+

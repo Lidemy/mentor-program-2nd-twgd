@@ -1,0 +1,109 @@
+.content .form__container .question__block .question__answer .text__long, .content .form__container .question__block .question__answer .text__short {
+  font-size: 16px;
+  padding-bottom: 5px;
+  background: none;
+  border: none;
+  border-bottom: 0.5px solid lightgray;
+  outline: none;
+}
+
+body {
+  margin: 0;
+}
+
+.background__image {
+  background: url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/80/55/7857c405c747c6c.jpg) center center;
+  background-size: cover;
+  height: 278px;
+}
+
+.content {
+  background: #f8ede6;
+}
+.content .form__container {
+  margin: 0 auto;
+  width: 600px;
+  position: relative;
+  top: -100px;
+  background: #ffffff;
+  border-top: 10px solid orange;
+  padding: 25px;
+}
+.content .form__container .title__container {
+  padding: 15px;
+}
+.content .form__container .title__container .form__title {
+  font-size: 36px;
+}
+.content .form__container .title__container .form__description {
+  font-size: 14px;
+}
+.content .form__container .title__container .form__description .required {
+  color: #ff0000;
+}
+.content .form__container .title__container .form__description .required::before {
+  content: attr(data-required);
+  color: #ff0000;
+}
+.content .form__container .question__block {
+  margin: 3px 0;
+  padding: 15px;
+}
+.content .form__container .question__block .question__title {
+  font-size: 20px;
+}
+.content .form__container .question__block .question__title::after {
+  content: attr(data-symbol);
+  color: #ff0000;
+  padding-left: 5px;
+}
+.content .form__container .question__block .question__description {
+  font-size: 14px;
+}
+.content .form__container .question__block .question__answer {
+  margin-top: 10px;
+}
+.content .form__container .question__block .question__answer .text__short {
+  width: 50%;
+}
+.content .form__container .question__block .question__answer .text__long {
+  width: 100%;
+}
+.content .form__container .question__block .question__prompt {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #ff0000;
+}
+.content .form__container .button input {
+  margin-top: 10px;
+  margin-left: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  background: #4285f4;
+  display: inline-block;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+.content .form__container .notice {
+  color: #808080;
+  padding: 15px;
+  font-size: 10px;
+}
+.content .footer {
+  width: 650px;
+  margin: 0 auto;
+  position: relative;
+  top: -60px;
+  text-align: center;
+}
+.content .footer .declaration {
+  font-size: 10px;
+}
+.content .footer .logo {
+  color: #808080;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style-new.css.map */

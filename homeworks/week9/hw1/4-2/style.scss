@@ -1,0 +1,135 @@
+$bg-color: #f8ede6;
+$form-bg-color: #ffffff;
+$danger-color: #ff0000;
+$btm-color: #ffffff;
+$btm-bg-color: #4285f4;
+$secondary-color: #808080;
+
+$des-font-size: 14px;
+
+
+%que-ans-text-shared {
+    font-size: 16px;
+    padding-bottom: 5px;
+    background: none;
+    border: none;
+    border-bottom: 0.5px solid lightgray;
+    outline:none;
+}
+
+
+body {
+	margin: 0;
+}
+.background__image {
+	background: url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/80/55/7857c405c747c6c.jpg) center center;
+	background-size: cover;
+	height: 278px;
+}
+.content {
+    background: $bg-color;
+    
+    .form__container {
+        margin: 0 auto;
+        width: 600px;
+        position: relative;
+        top: -100px;
+        background: $form-bg-color;
+        border-top: 10px solid orange;
+        padding: 25px;
+
+        .title__container {
+            padding: 15px;
+
+            .form__title {
+                font-size: 36px;
+            }
+            .form__description {
+                font-size: $des-font-size;
+
+                .required {
+                    color: $danger-color;
+
+                    &::before {
+                        content: attr(data-required);
+                        color: $danger-color;
+                    }
+                }
+                
+            }
+        }
+
+        .question__block {
+            margin: 3px 0;
+            padding: 15px;
+
+            .question__title {
+                font-size: 20px;
+
+                &::after {
+                    content: attr(data-symbol);
+                    color : $danger-color;
+                    padding-left: 5px;
+                }
+            }
+            .question__description {
+                font-size: $des-font-size;
+            }
+            .question__answer {
+                margin-top: 10px;
+            
+                .text__short {
+                    width: 50%;
+                    @extend %que-ans-text-shared;
+                }
+                .text__long {
+                    width: 100%;
+                    @extend %que-ans-text-shared;
+                }
+                
+            }
+            .question__prompt {
+                margin: 10px 0;
+                font-size: 16px;
+                color: $danger-color;
+            }
+            
+        }
+        .button {
+            input {
+                margin-top: 10px;
+                margin-left: 15px;
+                color: $btm-color;
+                font-size: 14px;
+                background: $btm-bg-color;
+                display: inline-block;
+                padding: 10px 30px;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+        .notice {
+            color: $secondary-color;
+            padding: 15px;
+            font-size: 10px;
+        }
+    }
+    .footer {
+        width: 650px;
+        margin: 0 auto;
+        position: relative;
+        top: -60px;
+        text-align: center;
+        
+        .declaration {
+            font-size: 10px;
+        }
+        .logo {
+            color: $secondary-color;
+            font-size: 22px;
+            margin-top: 20px; 
+        }
+    }
+}
+
+
